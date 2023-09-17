@@ -10,6 +10,11 @@ class RouteOneScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MainLayout(children: [
+      ElevatedButton(
+          onPressed: () {
+            Navigator.of(context).maybePop();
+          },
+          child: Text('maybe Pop')),
       Text(
         num.toString(),
         textAlign: TextAlign.center,
